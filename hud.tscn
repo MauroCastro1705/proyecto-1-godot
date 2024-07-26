@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://bprh5ofv5asng"]
+
+[ext_resource type="FontFile" uid="uid://c2c1y0kmtwemw" path="res://fonts/Xolonium-Regular.ttf" id="1_qkbpe"]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="ScoreLabel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -215.0
+offset_bottom = 86.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_qkbpe")
+theme_override_font_sizes/font_size = 65
+text = "0"
+
+[node name="Message" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_qkbpe")
+text = "Sobrevive!"
+
+[node name="StartButton" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="MessageTimer" type="Timer" parent="."]
